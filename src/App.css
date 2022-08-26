@@ -1,0 +1,35 @@
+.check--btn {
+    padding: 1em 2em;
+    color: #FFF;
+    background: #4D5B9E;
+    display: block;
+    margin-inline: auto;
+    margin-top: 2.7em;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.endGame-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    gap: 1.2em;
+}
+
+.endGame--btn {
+    padding: 1em 2.2em;
+    background: #4D5B9E;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #FFF;
+    border: 0;
+    font-size: 1.2rem
+}
+
+.endGame--score {
+    font-size: 1.1rem;
+}

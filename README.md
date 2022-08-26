@@ -1,0 +1,1 @@
+Quiz App made in React JS. I've used The Open Trivia Database.

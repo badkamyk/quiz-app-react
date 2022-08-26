@@ -1,0 +1,188 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  font-family: "Karla", sans-serif;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  overflow: hidden;
+  background: #F5F7FB;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+hr {
+  width: 80%;
+}
+
+button {
+  transition: all 0.3s ease-in-out;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+button:hover,
+button.active {
+  box-shadow: 0 10px 25px rgba(42, 71, 163, 0.3);
+  color: dodgerblue;
+}
+
+
+
+.start--container {
+  text-align: center;
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid pink;
+  height: 100vh;
+  gap: 3em;
+  background-color: #F5F7FB;
+}
+
+.start--header {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #293264;
+}
+
+.start--description {
+  font-size: 2rem;
+  color: #293264;
+}
+
+.start--btn {
+  padding: 0.9em 2.7em;
+  background-color: #4D5B9E;
+  border-radius: 15px;
+  border: 0;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #FFF;
+  cursor: pointer;
+
+}
+
+.background--part-up {
+  width: 20em;
+  height: 20em;
+  background-color: #FFFAD1;;
+  position: absolute;
+  top: -10em;
+  right:-8em;
+  margin-left: -20em;
+  margin-bottom: -20px;
+  border-radius: 45%;
+}
+
+.background--part-down {
+  width: 20em;
+  height: 20em;
+  background-color: #DEEBF8;
+  position: absolute;
+  bottom: -8em;
+  left: 10em;
+  margin-left: -20em;
+  margin-bottom: -20px;
+  border-radius: 45%;
+}
+
+.question-container {
+    padding-top: 1.8em;
+    text-align: center;
+}
+
+.question--line {
+  width: 72%;
+  height: 1px;
+  background-color: #DBDEF0;
+  margin-inline: auto;
+  margin-top: 1.5em;
+}
+
+.question--quest {
+  font-size: 1.3rem;
+  margin-bottom: 0.9em;
+  max-width: 69%;
+  margin-inline: auto;
+}
+
+.options-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  max-width: 69%;
+  margin-inline: auto;
+}
+
+.question--btn {
+  padding: 0.6em 1.8em;
+  border-radius: 10px;
+  border: 1px solid #4D5B9E;
+  cursor: pointer;
+}
+

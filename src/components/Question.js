@@ -24,16 +24,17 @@ export default function Question(props) {
     })
 
 
-    return (<div className="question-container">
-        <h3 className="question--quest">{props.questionInfo.question
-            .replaceAll('&quot;', '"')
-            .replaceAll('&rsquo;', "'")
-            .replaceAll('&#039;', "'")}</h3>
-        <div className="options-container">
-            {options}
-        </div>
-        <div class="question--line"></div>
-        <div className="background--part-up"></div>
-        <div className="background--part-down"></div>
-    </div>)
+    return (
+        <div className="question-container">
+            <h3 className="question--quest">{props.questionInfo.question
+                .replaceAll('&quot;', '"')
+                .replaceAll('&rsquo;', "'")
+                .replaceAll('&#039;', "'")}</h3>
+            <div className="options-container">
+                {options}
+            </div>
+            <div class="question--line"></div>
+            <div className="background--part-up"></div>
+            <div className="background--part-down"></div>
+        </div>)
 }

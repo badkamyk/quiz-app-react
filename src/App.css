@@ -33,3 +33,27 @@
 .endGame--score {
     font-size: 1.1rem;
 }
+
+
+@media (max-width: 1200px) {
+    .check--btn {
+        margin: 0.6em auto;
+        padding: 0.8em 1.8em;
+    }
+
+    .endGame-container {
+        margin-bottom: 1em;
+        margin-top: 0.6em;
+    }
+
+
+    .endGame--btn {
+        padding: 0.5em 1.5em;
+        /*margin-botom: 0.3em;*/
+    }
+
+    .endGame--score {
+        font-size: 0.5rem;
+    }
+
+}

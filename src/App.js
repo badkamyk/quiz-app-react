@@ -75,22 +75,22 @@ function App() {
             selectAnswer={selectAnswer}
         />)
     })
+
     return (
         <div>
             {!showStart ?
                 <div>
                     {renderQuestions}
+                    {showAnswers ?
+                        <div className="endGame-container">
+                            <p className="ndGame--score">You scored {score} correct answers</p>
+                            <button onClick={playAgain} className="endGame--btn">Play again</button>
+                        </div>
+                        : <button disabled={!allComplete} onClick={checkAnswers} className="check--btn">Check
+                            answers</button>}
                 </div>
-                : <Start handleClick={startGame}/>
-            }
-            {showAnswers ?
-                <div className="endGame-container">
-                    <p className="endGame--score">You scored {score} correct answers</p>
-                    <button onClick={playAgain} className="endGame--btn">Play again</button>
-                </div>
-                : <button disabled={!allComplete} onClick={checkAnswers} className="check--btn">Check answers</button>
-
-            }
+                :
+                <Start handleClick={startGame}/>}
         </div>
     );
 }
